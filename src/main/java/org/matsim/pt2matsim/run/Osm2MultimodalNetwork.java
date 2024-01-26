@@ -18,6 +18,7 @@
 
 package org.matsim.pt2matsim.run;
 
+import org.matsim.core.network.NetworkUtils;
 import org.matsim.pt2matsim.config.OsmConverterConfigGroup;
 import org.matsim.pt2matsim.osm.OsmMultimodalNetworkConverter;
 import org.matsim.pt2matsim.osm.lib.*;
@@ -78,7 +79,8 @@ public final class Osm2MultimodalNetwork {
 	public static void run(OsmConverterConfigGroup config) {
 		AllowedTagsFilter filter = new AllowedTagsFilter();
 		filter.add(Osm.ElementType.WAY, Osm.Key.HIGHWAY, null);
-		filter.add(Osm.ElementType.WAY, Osm.Key.RAILWAY, null);
+		/*filter.add(Osm.ElementType.WAY, Osm.Key.BUS, null);*/
+		/*filter.add(Osm.ElementType.WAY, Osm.Key.RAILWAY, null);*/ //Edited by Zame
 
 		OsmData osmData = new OsmDataImpl(filter);
 		new OsmFileReader(osmData).readFile(config.getOsmFile());
