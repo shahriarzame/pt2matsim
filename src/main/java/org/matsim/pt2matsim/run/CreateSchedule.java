@@ -12,7 +12,7 @@ public class CreateSchedule {
 
 
     public static void main(String[] args) {
-        Gtfs2TransitSchedule.run("example/MMR/gtfs_mvv_2019.zip", GtfsConverter.DAY_WITH_MOST_SERVICES, TransformationFactory.DHDN_GK4, "C:\\Education\\matsim_ws22_23\\matsim_projects\\pt2matsim\\example\\MMR\\output_networks_6\\MMR_mvv_bus_2019_schedule.xml", "C:\\Education\\matsim_ws22_23\\matsim_projects\\pt2matsim\\example\\MMR\\output_networks_6\\MMR_mvv_bus_2019_Vehicles.xml");
+        Gtfs2TransitSchedule.run("example/MMR/gtfs_mvv_2019.zip", GtfsConverter.DAY_WITH_MOST_SERVICES, TransformationFactory.DHDN_GK4, "C:\\Education\\matsim_ws22_23\\matsim_projects\\pt2matsim\\example\\MMR\\output_networks_6\\MMR_mvv_bus_2019_schedule.xml", "C:\\Education\\matsim_ws22_23\\matsim_projects\\pt2matsim\\example\\MMR\\output_networks_6\\MMR_mvv_bus_2019_Vehicles_FINAL.xml");
     }
 
 
